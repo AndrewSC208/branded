@@ -8,4 +8,11 @@ $(".header").vegas({
    	]
 });
 
+// SET UP THE NAV BUTTON:
+// create burger var
+var $hamburger = $('.hamburger');
+// toggle class "is-active" when clicked:
+$hamburger.on('click', function(e) {
+	$hamburger.toggleClass('is-active');
+});
 

@@ -10,7 +10,7 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- VEGAS CSS -->
     <link rel="stylesheet" href="bower_components/vegas/dist/vegas.min.css">
-    <link rel="stylesheet" href="bower_components/css-hamburgers/dist/hamburgers.min.css">
+    <!-- <link rel="stylesheet" href="bower_components/css-hamburgers/dist/hamburgers.min.css"> -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -30,13 +30,133 @@
     
     <section class="header">
         <div class="container-fluid">
+            <div class="row nav-row">
+                <div class="col-sm-2 pull-left">
+                    <button class="hamburger hamburger--squeeze" type="button">
+                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                    </button>
+                </div>
+                <div class="col-sm-2 pull-right">
+                    <!-- <h3 class="nav-brand"><strong>BRAND</strong>ly</h3> -->
+                </div>
+            </div> <!-- ./row -->
+            <div class="row center-block text-center">
+                <div class="col-sm-12">
+                    <div class="jumbotron">
+                        <h3><span>SPRING / SUMMER COLLECTION</span></h3>
+                        <h1><span>UP TO 60% DISCOUNT ON NEW ARRIVALS</span></h1>
+                        <h3><span>TRENDING NEW ITEMS FROM CREATORS AROUND THE WORLD</span></h3>
+                        <button class="btn btn-primary">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- ./header -->
+
+    <section class="latest-products">
+        <div class="container">
+            <div class="row intro-header center-block text-center">
+                <div class="col-sm-12">
+                    <hr>
+                    <h2>Latest Products</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row collections">
+                <div class="col-sm-4">
+                    <span class="img-title text-center"><h3>Men</h3></span>
+                    <img src="images/men.jpg" alt="men" class="img-responsive">
+                </div>
+                <div class="col-sm-4">
+                    <span class="img-title text-center"><h3>Woman</h3></span>
+                    <img src="images/woman.jpg" alt="woman" class="img-responsive">
+                </div>
+                <div class="col-sm-4">
+                    <span class="img-title text-center"><h3>Watches</h3></span>
+                    <img src="images/watches.jpg" alt="watches" class="img-responsive">
+                </div>
+            </div>
+            <div class="row sales">
+                <div class="col-sm-6">
+                    <hr class="top">
+                    <span class="img-title text-center"><h3>40% Off New Autum Collection</h3></span>
+                    <hr class="bottom">
+                    <img src="images/40Off.jpg" alt="watches" class="img-responsive">
+                </div>
+                <div class="col-sm-6">
+                    <hr class="top">
+                    <span class="img-title text-center"><h3>Mega Sale on itmes from spirit collection</h3></span>
+                    <hr class="bottom">
+                    <img src="images/megaSale.jpg" alt="watches" class="img-responsive">
+                </div>
+            </div>
+        </div><!-- ./container -->
+    </section><!-- ./latest-products -->
+
+    <section class="trending-items">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12 pull-right">
-                    <button class="hamburger hamburger--collapse pull-right" type="button">
-                        <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                        </span>
-                    </button>  
+                <div class="col-sm-12 intro-header center-block text-center">
+                    <hr>
+                    <h2>Latest Products</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/trending-item.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="trending-product-title">Nathan Steward Jacket</h3>
+                    <p class="collection">Summer/Autumn Collection</p>
+                    <hr class="trend-hr">
+                    <p class="trending-description">Clasic Nathan Stewart jackect from his collection. This item is loved by many just because of it's simple style. Simple lines, loveyly texture, it suits almost everyone. It comes in six different colors, and all sizes.</p>
+                    <h4 class="tip-title">Fashion Tip:</h4>
+                    <p class="tip">With this jacket, Nathan Stewart sunglasses go hand in hand.</p>
+                    <div class="shop">
+                        <div class="sizes">
+                            <button class="btn">M</button>
+                            <button class="btn">L</button>
+                            <button class="btn">XL</button>
+                            <button class="btn">XXL</button>
+                        </div>
+                        <div class="extra">
+                            <button class="btn">Shop Now</button>
+                            <button class="btn">Size Guide</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 intro-header center-block text-center">
+                    <hr>
+                    <h2>From the Blog</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="article">
+                        <img src="images/german_fashion_wizards.jpg" alt="" class="img-responsive">
+                        <h3>German Fashion Wizards</h3>
+                        <p class="caption">By Andrew Meiling | Fashion</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste architecto iusto aspernatur totam voluptatibus deserunt voluptas, aliquid obcaecati aliquam tempore nemo repudiandae temporibus ea perferendis unde amet consequuntur, asperiores odio?</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                      <div class="article">
+                        <img src="images/sunglasses.jpg" alt="" class="img-responsive">
+                        <h3>Anne Stewarts Sunglasses</h3>
+                        <p class="caption">By Andrew Meiling | Fashion</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste architecto iusto aspernatur totam voluptatibus deserunt voluptas, aliquid obcaecati aliquam tempore nemo repudiandae temporibus ea perferendis unde amet consequuntur, asperiores odio?</p>
+                        <button class="btn">Read More</button>
+                    </div>
                 </div>
             </div>
         </div>
