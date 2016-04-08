@@ -1,0 +1,38 @@
+/* == TRENDING-ITEMS ==*/
+section.trending-items {
+  padding: 0 0 10px 0;
+  @media (min-width: 768px) {
+    padding: 0 0 40px 0;
+  }
+  // change me: 
+  background-color: gray;
+
+  .trending-product-title {
+    margin: 25px 0 10px 0;
+  }
+
+  .trend-hr {
+    width: 30px;
+    border-color: #000;
+    margin: 40px 0 40px 0;
+  }
+
+  .tip-title {
+     margin: 50px 0 0 0;
+  }
+
+  .shop {
+
+    @media (min-width: 768px) {
+      margin: 70px 0 0 0;
+    }
+
+    button {
+      border: 1px solid #light-gray;
+      border-top: 1px solid gray;
+      border-radius: 0px;
+      margin: 10px 10px 10px 0;
+      padding: 10px 20px;
+    }
+  }
+}

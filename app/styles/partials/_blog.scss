@@ -1,0 +1,25 @@
+// ==  BLOG ==//
+section.blog {
+  .article {
+    margin: 10px 0;
+  }
+  @media (min-width: 768px) {
+    .caption {
+      margin: 10px 0;
+    }
+  }
+
+  h3 {
+    color: red;
+  }
+  
+  .btn {
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 0;
+  }
+  
+  p {
+    margin: 40px 0;
+  }
+}

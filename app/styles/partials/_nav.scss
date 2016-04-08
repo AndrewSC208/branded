@@ -1,0 +1,25 @@
+/* == NAV ==*/
+.off-canvas-nav {
+  position: absolute;
+  transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(0,0,0,.50);
+  
+
+
+  li {
+    position: relative;
+    margin: auto 0;
+    font-size: 25px;
+    list-style: none;
+    padding-right: 50px;
+  }
+}
+
+.off-canvas-nav.is-visible {
+  transform: translateY(0);
+  z-index: 1;
+}

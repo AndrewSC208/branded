@@ -26,13 +26,20 @@
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-    <section class="header">
+    <![endif]-->    
+    <section class="">
+        <nav class="off-canvas-nav center-block text-center">
+            <ul>
+                <li><a>Latest Products</a></li>
+                <li><a>Trending Products</a></li>
+                <li><a>From the Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header">
         <div class="container-fluid">
             <div class="row nav-row">
                 <div class="col-sm-2 pull-left">
-                    <button class="hamburger hamburger--squeeze" type="button">
+                    <button class="hamburger hamburger--squeeze menue-toggle" type="button">
                         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
                     </button>
                 </div>
@@ -50,6 +57,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section> <!-- ./header -->
 
@@ -98,7 +106,7 @@
             <div class="row">
                 <div class="col-sm-12 intro-header center-block text-center">
                     <hr>
-                    <h2>Latest Products</h2>
+                    <h2>Trending Products</h2>
                     <hr>
                 </div>
             </div>
@@ -157,6 +165,22 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste architecto iusto aspernatur totam voluptatibus deserunt voluptas, aliquid obcaecati aliquam tempore nemo repudiandae temporibus ea perferendis unde amet consequuntur, asperiores odio?</p>
                         <button class="btn">Read More</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERES</h4>
+                    <form action="">
+                        <input type="text" placeholder="EMAIL ADDRESS">
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn" id="subscribe-btn">Subscribe</button>
                 </div>
             </div>
         </div>

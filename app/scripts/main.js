@@ -1,5 +1,6 @@
-// setting up the vegas slider:
-$(".header").vegas({
+var $header = $('.header');
+
+$header.vegas({
 	conver: true,
    	slides: [
        	{ src: "/images/slider_1.jpg" },
@@ -8,11 +9,17 @@ $(".header").vegas({
    	]
 });
 
-// SET UP THE NAV BUTTON:
-// create burger var
-var $hamburger = $('.hamburger');
+var $hamburger   = $('.hamburger');
+var	$navigation  = $('.off-canvas-nav');
+
 // toggle class "is-active" when clicked:
 $hamburger.on('click', function(e) {
 	$hamburger.toggleClass('is-active');
+	$navigation.toggleClass('is-visible');
 });
+
+
+
+
+
 

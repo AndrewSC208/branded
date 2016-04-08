@@ -1,0 +1,32 @@
+// == FOOTER ==//
+section.subscribe {
+  margin: 40px 0 0 0;
+  padding: 80px 0 56px 0;
+  background-image: url('../images/subscribe_bg.jpg');
+  background-repeat: no-repeat;
+
+  h4 {
+    color: #fff;
+  }
+
+  input {
+    width: 92%;
+    height: 50px;
+    border: 1px solid rgba(255,255,255, .50);
+    background: rgba(0,0,0,.30);
+    padding: 15px;
+  }
+
+  input::-webkit-input-placeholder {
+    color: rgba(255,255,255, .50);
+  }
+
+  button {
+    margin: 39px 0 25px 0;
+    padding: 14px 50px; 
+    border: 1px solid rgba(255, 255, 255, .50);
+    background-color: transparent;
+    color: rgba(255, 255, 255, .50);
+    border-radius: 0px;
+  }
+}
