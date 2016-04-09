@@ -1,4 +1,10 @@
 /* == NAV ==*/
+.navbar {
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+  z-index: 1;
+}
+
 .off-canvas-nav {
   position: absolute;
   transform: translateY(-100%);
@@ -6,16 +12,27 @@
   transition-duration: 0.4s;
   z-index: 2;
   width: 100%;
-  background-color: rgba(0,0,0,.50);
-  
+  background-color: rgba(0,0,0,.75);  
 
+  ul {
+    margin-right: 40px;
+  }
 
   li {
     position: relative;
-    margin: auto 0;
     font-size: 25px;
     list-style: none;
-    padding-right: 50px;
+    margin: 30px 0 30px 0;
+    
+
+    a {
+      color: rgba(255,255,255,.80);
+    
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid red;
+      }
+    }
   }
 }
 

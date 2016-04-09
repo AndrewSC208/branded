@@ -1,3 +1,5 @@
+$(function() {
+
 var $header = $('.header');
 
 $header.vegas({
@@ -12,6 +14,7 @@ $header.vegas({
 var $hamburger   = $('.hamburger');
 var	$navigation  = $('.off-canvas-nav');
 
+
 // toggle class "is-active" when clicked:
 $hamburger.on('click', function(e) {
 	$hamburger.toggleClass('is-active');
@@ -19,6 +22,19 @@ $hamburger.on('click', function(e) {
 });
 
 
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 
 
