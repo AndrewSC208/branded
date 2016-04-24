@@ -1,27 +1,39 @@
 $(function() {
 
-var $header = $('.header');
+  // navigation variables
+  var burger         = $('.hamburger');
+  var navigation     = $('.off-canvas-nav');
+  var visibleNavLink = $('.off-canvas-nav a');
+  // slider variabels:
+  var header = $('.header');
+  
+  // burger action
+  burger.on('click', function(e) {
+    burger.toggleClass('is-active');
+  });
 
-$header.vegas({
-	conver: true,
-   	slides: [
-       	{ src: "/images/slider_1.jpg" },
-       	{ src: "/images/slider_2.jpg" },
-       	{ src: "/images/slider_3.jpg" }
-   	]
-});
+  // toggle navigation when burger is clicked:
+  burger.on('click', function(e) {
+    navigation.toggleClass('is-visible');
+  });
 
-var $hamburger   = $('.hamburger');
-var	$navigation  = $('.off-canvas-nav');
+  // hid navigation, and change burger style when link in navigation is clicked:
+  visibleNavLink.on('click', function(e) {
+    burger.toggleClass('is-active');
+    navigation.toggleClass('is-visible');
+  });
 
+  // slider configuration
+  header.vegas({
+  	conver: true,
+     	slides: [
+         	{ src: "/images/slider_1.jpg" },
+         	{ src: "/images/slider_2.jpg" },
+         	{ src: "/images/slider_3.jpg" }
+     	]
+  });
 
-// toggle class "is-active" when clicked:
-$hamburger.on('click', function(e) {
-	$hamburger.toggleClass('is-active');
-	$navigation.toggleClass('is-visible');
-});
-
-
+  // scroll transition to sections!
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -35,7 +47,3 @@ $hamburger.on('click', function(e) {
     }
   });
 });
-
-
-
-

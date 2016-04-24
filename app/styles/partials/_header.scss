@@ -4,7 +4,7 @@
   background: cover;
 
   .jumbotron {
-    margin-top: 50px;
+    margin-top: 20vh;
     background-color: rgba(0,0,0,0);
     color: #fff;
 
@@ -21,7 +21,7 @@
   /* Small devices (tablets, 768px and up) */
   @media (min-width: 768px) {
     .jumbotron {
-      margin-top: 175px;
+      margin-top: 30vh; 
 
       button {
         font-size: 1.5em;
