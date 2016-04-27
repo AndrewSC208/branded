@@ -7,20 +7,16 @@ $(function() {
   // slider variabels:
   var header = $('.header');
   
-  // burger action
+  //burger action
   burger.on('click', function(e) {
     burger.toggleClass('is-active');
-  });
-
-  // toggle navigation when burger is clicked:
-  burger.on('click', function(e) {
     navigation.toggleClass('is-visible');
   });
 
-  // hid navigation, and change burger style when link in navigation is clicked:
+  // hide navigation, and change burger style when link in navigation is clicked:
   visibleNavLink.on('click', function(e) {
-    burger.toggleClass('is-active');
-    navigation.toggleClass('is-visible');
+    navigation.removeClass('is-visible');
+    burger.removeClass('is-active');
   });
 
   // slider configuration

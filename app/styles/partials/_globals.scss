@@ -5,7 +5,7 @@ body {
 }
 
 hr {
-  border: 1px solid red;
+  border: 1px solid rgba(255, 0,0, .75);
   width: 80px;
 }
 
@@ -15,5 +15,16 @@ hr {
 }
 
 button {
-  border-radius: 0px;
+	border-radius: 0px;
+
 }
+
+button.btn {
+	&:hover {
+		background-color: rgba(255, 0,0, .40);
+	}
+	&:active {
+		background-color: rgba(255, 0,0, .40);
+	}
+}
+

@@ -1,40 +1,29 @@
 /* == LATEST PRODUCTS ==*/
 section.latest-products {
+  h3 {
+    margin: 0;
+  }
 
   img {
     outline: 2px solid #fff;
     outline-offset: -20px;
   }
 
-  .collections {
-    .img-title {
-      color: #fff;
-      position: absolute;
-      margin: 45% 35%;
-    }
+  .img-title {
+    color: #fff;
+    z-index: 1;
+    margin: 0;
+    position: absolute;      
+    top: 50%;                         
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
   }
 
   .sales {
     margin-top: 25px;
     margin-bottom: 25px;
-    
-    
-    .img-title {
-      color: #fff;
-      position: absolute;
-      margin: 20% 35%;
-    }
-
-    hr.top {
-      position: absolute;
-      margin: 20% 41%;
-      border: 1px solid #fff;
-    }
-
-    hr.bottom {
-      position: absolute;
-      margin: 40% 41%;   
-      border: 1px solid #fff;
-    }
   }
 }
