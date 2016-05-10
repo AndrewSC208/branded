@@ -5,26 +5,28 @@ section.trending-items {
     padding: 0 0 40px 0;
   }
   // change me: 
-  background-color: gray;
+  background-color: #EEEEEE;
 
   .trending-product-title {
-    margin: 25px 0 10px 0;
+    margin: 5px 0 10px 0;
   }
 
   .trend-hr {
-    width: 30px;
+    width: 175px;
     border-color: #000;
-    margin: 40px 0 40px 0;
+    margin: 5px 0 5px 0;
   }
 
   .tip-title {
-     margin: 50px 0 0 0;
+     margin: 10px 0 0 0;
   }
 
   .shop {
 
-    @media (min-width: 768px) {
-      margin: 70px 0 0 0;
+    // /* Medium devices (desktops, 992px and up) */
+    // @media (min-width: @screen-md-min) {}
+    @media (min-width: 992px) {
+      
     }
 
     button {

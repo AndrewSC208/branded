@@ -1,0 +1,18 @@
+
+%%%%%%%%%%
+2. fix right hand text spacing on trending products
+%%%%%%%%%%
+
+Add some kind of button's with this maybe like a social share thing, or some other type of buy now, or check out. Something that goes along with the rest of the theme. There will be two buttons, one top of each other when small screen size, next to each other when tablet half and half and they will scale from there. 
+
+
+4. update font throughout the whole project
+5. update favicon
+6. push live
+
+THOUGHTS FOR THE DAY'S: 
+
+1. the reason why I am so intrested in data is there has to always be a corralation with and nth amount of data points. The reason is unknown why it would be cool to find a way to look up relationships with social media hot topics and peoples location. 
+
+2. There are so many possiablities to the different paths and variables one can take in one day. I can make x amount of positive decisions does that make me a positive person and put me on a positive growth curve?
+

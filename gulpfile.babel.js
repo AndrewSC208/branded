@@ -166,3 +166,23 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
+
+gulp.task('deploy', ['build'], () => {
+  // create a new publisher
+  const publisher = $.awspublish.create({
+    key: 'AKIAJVVAVJDPPHUY2T7A',
+    secret: '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',
+    bucket: 'awsgulptestandrewmeiling'
+  });
+
+  // define custom headers
+  const headers = {
+    'Cache-Control': 'max-age=315360000, no-transform, public'
+  };
+
+  return gulp.src('dist/**/*.*')
+    .pipe(publisher.publish(headers))
+    .pipe(publisher.sync())
+    .pipe(publisher.cache())
+    .pipe($.awspublish.reporter());
+});

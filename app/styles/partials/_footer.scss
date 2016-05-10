@@ -1,15 +1,21 @@
 // == FOOTER ==//
 section.subscribe {
-  margin: 40px 0 0 0;
-  padding: 80px 0 56px 0;
+  margin: 25px 0 0 0;
+  padding: 20px 0 0px 0;
   background-image: url('../images/subscribe_bg.jpg');
   background-repeat: no-repeat;
+
+  // add media query
+  @media (min-width: 768px) {
+    padding: 40px 0 40px 0;
+  }
 
   h4 {
     color: #fff;
   }
 
   input {
+    margin-top: 15px;
     width: 92%;
     height: 50px;
     border: 1px solid rgba(255,255,255, .50);
@@ -22,11 +28,19 @@ section.subscribe {
   }
 
   button {
-    margin: 39px 0 25px 0;
+    margin: 15px 0 25px 0;
     padding: 14px 50px; 
     border: 1px solid rgba(255, 255, 255, .50);
     background-color: transparent;
     color: rgba(255, 255, 255, .50);
     border-radius: 0px;
+  }
+
+  #shopNow {
+
+  }
+
+  #sizeGuide {
+    margin-left: 5px;
   }
 }
